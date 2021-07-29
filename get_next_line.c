@@ -14,6 +14,16 @@
 #include <fcntl.h>
 #include "get_next_line.h"
 
+char	*ret_val(int size, char *line)
+{	
+	if (!size && !len_c(line, 0))
+	{
+		free(line);
+		return (NULL);
+	}
+	return (line);
+}
+
 char	*get_next_line(int fd)
 {
 	char		*line;

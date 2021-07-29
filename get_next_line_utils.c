@@ -93,13 +93,3 @@ char	*cutstr(char *str, int start, int len, int on)
 		free(str);
 	return (n_str);
 }
-
-char	*ret_val(int size, char *line)
-{	
-	if (!size && !len_c(line, 0))
-	{
-		free(line);
-		return (NULL);
-	}
-	return (line);
-}
